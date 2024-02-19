@@ -1,0 +1,325 @@
+/* Common styles for all resolutions 1920x1080 */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+
+/* banner styling with logo and contact-info */
+.banner {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    max-width: 100px;
+    height: auto;
+    margin-left: 10px;
+}
+
+#contact-info {
+    text-align: left;
+    padding-right: 50%;
+}
+
+#contact-info h1 {
+    margin: 0;
+}
+
+#contact-info p {
+    margin: 5px 0;
+}
+
+#contact-info a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 5px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+#contact-info a:hover {
+    color: #333;
+}
+
+/* nav bar styling for order_form */
+nav {
+    background-color: #333;
+    justify-content: space-between;
+}
+
+ul {
+    list-style-type: none;
+    overflow: hidden;
+    padding: 10px;
+    display: flex;
+}
+
+li {
+    margin-right: 10px;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 10px 15px;
+    text-decoration: none;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    border-radius: 5px;
+}
+
+a:hover {
+    background-color: rgb(255, 255, 255);
+    color: #333;
+    font-weight: bold;
+}
+
+
+/* Advertisement styling of tire-image, description, & label */
+.advertisement {
+    max-width: 600px;
+    margin: 20px auto;
+    overflow: hidden;
+    float: right;
+    padding: 20px;
+    width: calc(10% - 10px);
+    box-sizing: border-box;
+}
+
+.advertisement img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+.advertisement .description {
+    background-color: rgba(0, 0, 0, 0.1);
+    color: black;
+    font-style: italic;
+    text-align: center;
+    height: auto;
+    overflow: hidden;
+    border-radius: 5px;
+    display: flex;
+
+}
+
+.advertisement-label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+
+/* map styling for map-image with caption*/
+.map {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* Center vertically */
+    align-items: center;
+    /* Center horizontally */
+    text-align: center;
+    height: auto;
+}
+
+.map img {
+    width: 84%;
+    height: auto;
+    display: block;
+}
+
+.map figcaption {
+    background-color: black;
+    color: white;
+    font-style: italic;
+    padding: 3px;
+    text-align: center;
+    width: 84%;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+
+/* youtube-video styling and youtube-iframe */
+.youtube-video {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* Center vertically */
+    align-items: center;
+    /* Center horizontally */
+    text-align: center;
+    height: auto;
+}
+
+.youtube-iframe {
+    width: 80%;
+    height: 800px;
+    display: block;
+}
+
+/* iframe for tire_search section */
+.tire_search-iframe {
+    width: 100%;
+    height: 800px;
+    margin-right: 20px;
+}
+
+
+/* footer styling with feedback-section with a line break "hr" styling */
+footer {
+    background-color: #333;
+    color: #fff;
+    overflow-x: hidden;
+    text-align: center;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+.feedback-section {
+    padding: 20px;
+    margin-top: 20px;
+    text-align: center;
+}
+
+footer hr {
+    margin: 20px 0;
+    border: 1px solid #ccc;
+}
+
+
+/* Media query for iPhone X (375x812) */
+@media only screen and (min-width: 375px) and (max-width: 812px) {
+
+    footer {
+        padding: 0px;
+    }
+
+    .logo {
+        margin-left: 0px;
+    }
+
+    .banner {
+
+        display: block;
+    }
+
+    #contact-info {
+        padding-right: 5%;
+    }
+
+    #contact-info h1 {
+        font-size: 18px;
+    }
+
+    #contact-info p {
+        font-size: 12px;
+        margin: 5px 0;
+    }
+
+    #contact-info a {
+        font-size: 12px;
+    }
+
+    .advertisement {
+        width: 40%;
+        float: none;
+    }
+
+    .advertisement .description {
+        background-color: rgba(0, 0, 0, 0.1);
+        color: black;
+        font-style: normal;
+        padding: 7px;
+        height: auto;
+        overflow: hidden;
+        width: 115px;
+    }
+
+    .youtube-iframe {
+        width: 67%;
+        height: auto;
+    }
+
+    .map img figcaption {
+        width: 100%;
+        height: auto;
+
+    }
+}
+
+/* Media query for iPad Pro (1024x1366) */
+@media only screen and (min-width: 1024px) and (max-width: 1366px) {
+    footer {
+        padding: 5px;
+        font-size: 1.5em;
+    }
+
+    .logo {
+        margin-left: 0px;
+    }
+
+    .banner {
+        display: flex;
+        font-size: 1.2em;
+    }
+
+    #contact-info {
+        padding-right: 0%;
+    }
+
+    li a {
+        font-size: 1.5em;
+    }
+
+    .advertisement {
+        max-width: 90%;
+        margin: 20px auto;
+        overflow: hidden;
+        float: none;
+        padding: 20px;
+        box-sizing: border-box;
+    }
+
+    .advertisement img {
+        width: 100%;
+        height: auto;
+        border-radius: 8px;
+        border: 1px solid #ccc;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    }
+
+    .advertisement .description {
+        background-color: rgba(0, 0, 0, 0.1);
+        color: black;
+        font-style: italic;
+        text-align: center;
+        height: auto;
+        overflow: hidden;
+        border-radius: 5px;
+    }
+
+    .advertisement-label {
+        display: block;
+        margin-bottom: 10px;
+    }
+
+    .youtube-iframe {
+        width: 77%;
+        height: 500px;
+    }
+
+    .map img figcaption {
+        width: 100%;
+        height: auto;
+    }
+}

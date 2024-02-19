@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Metadata for character encoding, viewport, and compatibility -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- stylesheet for Leaflet map -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css">
+
+    <!-- JavaScript library for Leaflet map -->
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+
+    <!-- Sivun Ostikko -->
+    <title>"Mustapään Auto Oy | Mustat Renkaat"</title>
+
+    <!-- tyylisivu mukautettuja tyylejä varten -->
+    <link rel="stylesheet" href="styles.css">
+
+</head>
+
+<body>
+
+    <!-- Banneriosio yrityksen logolla ja yhteystiedoilla-->
+    <div class="banner">
+        <div class="logo">
+            <img src="/Taitaja2021/logo_dark.jpg" alt="Company Logo">
+        </div>
+        <div id="contact-info">
+            <!-- Yrityksen nimi ja yhteystiedot -->
+            <h1>Mustapään Auto Oy | Mustat Renkaat</h1>
+            <p>Kosteenkatu 1, 86300 Oulainen</p>
+            <p>Puh. 040-7128158</p>
+            <p>email: <a href="mailto:myyntymies@mustatnyeks.net">myyntymies@mustatnyeks.net</a></p>
+        </div>
+    </div>
+
+    <!-- Navigointivalikko -->
+    <nav>
+        <ul>
+            <!-- Navigointi Linkki rengasliikkeen sivulle -->
+            <li><a href="tires_shop.php">Tires Shop</a></li>
+        </ul>
+    </nav>
+
+    <!-- Iframe rengashakusivun upottamiseen -->
+    <iframe class="tire_search-iframe" src="tire_search.php" style="border: none;"></iframe>
+
+    <!--JavaScript-tiedosto mainokselle -->
+    <script src="advertisement.js"></script>
+
+    <!-- Osio YouTube-videon upottamiseen -->
+    <div class="youtube-video">
+        <h2>Tire changing video</h2>
+        <!-- Iframe for embedding YouTube video -->
+        <iframe class="youtube-iframe" src="https://www.youtube.com/embed/314HE4aMG-g?si=SmexgqfFVtwgVwZD"
+            allowfullscreen></iframe>
+    </div>
+
+    <!-- Osio kartan upottamisesta -->
+    <figure class="map">
+        <!-- Image of the location map -->
+        <img src="/Taitaja2021/MUSTATrenkaat_Karttakuva.jfif" alt="Toimipisteen kartta">
+        <!-- Caption for the map -->
+        <figcaption>Location Map</figcaption>
+    </figure>
+
+    <!-- Footer osio -->
+    <footer>
+        <!-- <hr> edustaa vaakaviivaa -->
+        <hr>
+        <!-- Palaute-osio-->
+        <div id="feedback-section">
+            <p><strong>Antaa Palautetta:</strong></p>
+            <p>Jos sinulla on palautetta tai kysyttävää, ota meihin yhteyttä antamaasi sähköpostilla
+                tai puhelinnumerolla.</p>
+            <p>Kiitos, että käytit Mustapään Auto Oy:n rengashakusivustoa. Arvostamme palautettasi ja
+                toivomme, että löydät täydelliset renkaat autollesi!</p>
+        </div>
+        <hr>
+
+        <!-- Copyright informaatio -->
+        <p>&copy; Taitaja Semi-Finals 2024. Web Development</p>
+    </footer>
+</body>
+
+</html>
